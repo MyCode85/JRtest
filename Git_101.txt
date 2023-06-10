@@ -1,0 +1,104 @@
+GIT_and_GitGub_Biginner_Tutorial_3-Gettingstarted-Install_Git(Windows)
+=======================================================================
+Step 1:check if git is already installed
+	c:\Users\jsimms\git>git --version
+Step 2:download and Install git
+	https://git-scm.com/
+Step 3:Run installer and insall git
+	Take all the defaults.
+Step 3:add your projet to git
+	c:\Users\jsimms\git>git --version
+	MKDIR AutomationUFT
+	cd AutomationUFT
+	
+Step 4:config and init repo
+	$ config --global user.email "jrsimms11@gmail.com"
+	$ git config --global user.email
+	$ git init
+
+Step 5:Add a file to working folder
+	create a file "TestFilePushFromLoRepo.txt" 
+	$ git status
+	$ git add TestFilePushFromLoRepo.txt
+	$ git status
+	$ git commit -m "added TestFilePushFromLoRepo"
+	
+Step 6:Add the remote repo url git remote add origin url of hithub repo
+	$ git remote add origin https://github.com/MyCode85/UFT_QTP.git
+		$ git remote show origin
+	$ git push -u origin master
+	$ git log
+	$ git --help or git help
+---------------------------------------------------------------------------
+1.What are branches
+2.How to create branch
+3.How checkout branch
+4.How to merge branch to master
+5.How to delete branch (local and remote)
+
+------------------------------------------------------------------------------
+Step 1: create a branch
+	$git branch qa
+	$git branch
+Step 2: checkout branch
+	$git checkout qa
+	create a file "TestFilePushFromLoRepo2.txt"
+	$ git status
+Step 3: Make some changes in your projet
+	$ git add TestFilePushFromLoRepo2.txt
+	$ git status
+	$ git commit -m "added TestFilePushFromLoRepo2"
+	$ git push -u origin qa
+	Note:Master has 1 file and qa has 2 files
+Step 4: On loal checkout master branch
+	$git checkout master
+Step 5: Merge new branch in master branch
+	$git merge qa
+Step 6: Push the changes
+	$ git push -u origin master
+Step 7: Delete branch
+	$ git branch -d qa
+	$ git push origin qa
+---------------------------------------------------------------------------
+1.What are tags/releases
+2.Why_should I create TAGS
+3.When to create TAGs
+4.How to create TAGs in git
+	reate|show|publish|delete
+
+	$ git checkout master
+	$ git tag
+	$ git tag v1.0
+	$ git tag
+	$ git show v1.0
+	$ git push origin v1.0
+	
+	$ git tag -d v1.0
+	$ git push origin --delete v1.0
+
+==============================================================
+Step 4:commands
+
+	- git config --global user.email "jrsimms11@gmail.com"
+	- git config --global user.user.name "MyCode85"
+
+	- git init
+	- git status
+	- git_add
+	- git commit -m...."
+
+Step 5:adding_to_remote_repo
+
+Searh Google "hithub"
+https://github.com
+
+
+cd..
+
+cd git
+cd AdAsstAut
+git status
+cd AutomationUFT
+git branch
+
+The_PullUP_Food_Truck_Boston
